@@ -40,16 +40,12 @@
     </section>
 </template>
 
-<style scoped>
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    
-} 
+<style lang="scss" scoped>
+@import '../assets/scss/style.scss';
 
 section {
     color: white;
-    background-color: #0282f9;
+    background-color: $blue;
     font-size: 1.2rem;
     padding: 3rem 0;
 

@@ -76,11 +76,7 @@
 
 <style lang="scss" scoped>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    
-} 
+@import '../assets/scss/style.scss';
 
 header {
     background-color: white;
@@ -111,6 +107,6 @@ ul{
 }
 
 .active {
-    color: #0282f9;
+    color: $blue;
 }
 </style>

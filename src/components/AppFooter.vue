@@ -15,6 +15,9 @@ import AppFooterBottom from './AppFooterBottom.vue';
 </template>
 
 <style scoped>
+
+@import '../assets/scss/style.scss';
+
   footer {
     color: white;
   }

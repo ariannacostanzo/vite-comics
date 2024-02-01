@@ -50,11 +50,8 @@ export default {
     </div>
 </template>
 
-<style scoped>
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+<style lang="scss" scoped>
+@import '../assets/scss/style.scss';
 
 #footer-bottom {
     background-color: #303030;
@@ -71,12 +68,12 @@ export default {
         padding: 15px 20px;
         font-size: 1.1rem;
         background-color: transparent;
-        border: 2px solid #0282f9;
+        border: 2px solid $blue;
         color: white;
         cursor: pointer;
 
-        &&:hover {
-            background-color: #0282f9;
+        &:hover {
+            background-color: $blue;
         }
     }
 
@@ -84,7 +81,7 @@ export default {
         display: flex;
         align-items: center;
         gap: 30px;
-        color: #0282f9;
+        color: $blue;
 
         nav {
             display: flex;

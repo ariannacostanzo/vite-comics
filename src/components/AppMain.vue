@@ -10,12 +10,9 @@
     </main>
 </template>
 
-<style scoped>
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    
-} 
+<style lang="scss" scoped>
+@import '../assets/scss/style.scss';
+
   main {
     color: white;
     font-size: 1.5rem;

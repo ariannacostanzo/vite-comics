@@ -41,11 +41,8 @@
   </div>
 </template>
 
-<style scoped>
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    } 
+<style lang="scss" scoped>
+   @import '../assets/scss/style.scss';
 
     #footer-top {
         background-image: url(../assets/images/footer-bg.jpg);
