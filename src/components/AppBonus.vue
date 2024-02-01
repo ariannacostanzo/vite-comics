@@ -22,6 +22,12 @@
           },
         ]
       }
+    },
+    mounted() {
+      this.lists.forEach ((item) => {
+
+        console.log(`@assets/images/buy-comics-${item.image}.png`)
+      })
     }
   }
 </script>
@@ -34,7 +40,7 @@
           <li><img src="../assets/images/buy-comics-subscriptions.png" alt=""><a href="">subscriptions</a></li>
           <li><img src="../assets/images/buy-comics-shop-locator.png" alt=""><a href="">comic shop locator</a></li> -->
         
-         <li v-for="list in lists"><img :src="`../assets/images/buy-${list.image}.png`" :alt="list.image"><a href="">{{ list.name }}</a></li>
+         <li v-for="list in lists"><img :src="`@assets/images/buy-comics-${list.image}.png`" :alt="list.image"><a href="">{{ list.name }}</a></li>
         
         </ul>
     </section>
