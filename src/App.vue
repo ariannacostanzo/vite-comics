@@ -19,32 +19,5 @@
 </template>
 
 <style>
-
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    background-color: #0e0e0e;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  /* da mettere nel file scss */
-  /* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  } */
-
-  ul li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
+@import './assets/scss/style.scss';
 </style>
