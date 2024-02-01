@@ -33,6 +33,9 @@
           <li><img src="../assets/images/buy-comics-merchandise.png" alt=""><a href="">digital comics</a></li>
           <li><img src="../assets/images/buy-comics-subscriptions.png" alt=""><a href="">digital comics</a></li>
           <li><img src="../assets/images/buy-comics-shop-locator.png" alt=""><a href="">digital comics</a></li>
+        
+         <!-- <li v-for="list in lists"><img :src="`../assets/images/buy-${list.image}.png`" :alt="list.image"><a href="">{{ list.name }}</a></li> -->
+        
         </ul>
     </section>
 </template>
