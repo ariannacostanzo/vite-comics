@@ -37,9 +37,13 @@ export default {
             <div>
                 <h4>FOLLOW US</h4>
                 <nav>
-                    <!-- <img v-for="icon in socialIcons" :src="`../assets/images/${icon.url}`" :alt="icon.name"> -->
-                    <img v-for="icon in socialIcons" :src="`../assets/images/${icon.url}.png`" :alt="icon.name">
-                    <!-- `../assets/images/${icon.url}.png` -->
+                    <!-- non mi funziona il path image -->
+                    <!-- <img v-for="icon in socialIcons" :src="`../assets/images/${icon.url}.png`" :alt="icon.name"> -->
+                    <img src="../assets/images/footer-facebook.png" alt="facebook">
+                    <img src="../assets/images/footer-twitter.png" alt="twitter">
+                    <img src="../assets/images/footer-youtube.png" alt="youtube">
+                    <img src="../assets/images/footer-pinterest.png" alt="pinterest">
+                    <img src="../assets/images/footer-periscope.png" alt="periscope">
                 </nav>
             </div>
         </div>
