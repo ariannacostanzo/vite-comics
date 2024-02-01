@@ -101,6 +101,7 @@ ul{
         text-transform: uppercase;
         font-size: .8rem;
         font-weight: 700;
+        padding: 3.1rem 0;
         
     }
 
@@ -108,5 +109,16 @@ ul{
 
 .active {
     color: $blue;
+    position: relative;
+
+    &::after {
+        content: '';
+        background-color: $blue;
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 </style>
