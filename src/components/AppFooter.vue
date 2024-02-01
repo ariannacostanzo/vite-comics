@@ -1,15 +1,21 @@
 <script>
+import AppFooterTop from './AppFooterTop.vue';
+import AppFooterBottom from './AppFooterBottom.vue';
   export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    components: {AppFooterTop, AppFooterBottom}
   }
 </script>
 
 <template>
     <footer>
-        FOOTER
+        <AppFooterTop/>
+        <AppFooterBottom/>
     </footer>
 </template>
 
 <style scoped>
-  /* style here */
+  footer {
+    color: white;
+  }
 </style>
