@@ -19,6 +19,13 @@
 </template>
 
 <style>
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
   body {
     background-color: #0e0e0e;
     font-family: 'Open Sans', sans-serif;
