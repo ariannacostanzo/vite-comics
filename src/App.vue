@@ -10,8 +10,8 @@
 </script>
 
 <template>
-  <!-- working on header with branch -->
   <AppHeader/>
+  <!-- working on main with branch -->
   <AppMain/>
   <AppFooter/>
 </template>
