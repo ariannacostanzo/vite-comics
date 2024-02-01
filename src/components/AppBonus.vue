@@ -1,13 +1,39 @@
 <script>
   export default {
-    name: 'AppBonus'
+    name: 'AppBonus',
+    data() {
+      return {
+        lists: [
+          {
+            name: 'Digital comics',
+            image: 'digital-comics'
+          },
+          {
+            name: 'DC Merchandise',
+            image: 'merchandise'
+          },
+          {
+            name: 'Subscription',
+            image: 'subscriptions'
+          },
+          {
+            name: 'Comic shop locator',
+            image: 'shop-locator'
+          },
+        ]
+      }
+    }
   }
 </script>
 
 <template>
     <section>
-
-        <div class="container">content goes here</div>
+        <ul class="container">
+          <li><img src="../assets/images/buy-comics-digital-comics.png" alt=""><a href="">digital comics</a></li>
+          <li><img src="../assets/images/buy-comics-merchandise.png" alt=""><a href="">digital comics</a></li>
+          <li><img src="../assets/images/buy-comics-subscriptions.png" alt=""><a href="">digital comics</a></li>
+          <li><img src="../assets/images/buy-comics-shop-locator.png" alt=""><a href="">digital comics</a></li>
+        </ul>
     </section>
 </template>
 
@@ -21,7 +47,29 @@
 section {
     color: white;
     background-color: #0282f9;
-    font-size: 1.5rem;
-    padding: 4rem 0;
+    font-size: 1.2rem;
+    padding: 3rem 0;
+
+    img {
+      width: 50px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    a {
+      color: white;
+    }
 }
+
+
 </style>
