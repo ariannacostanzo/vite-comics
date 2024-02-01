@@ -92,6 +92,10 @@ export default {
             font-size: 1.3rem;
         }
 
+        img {
+            cursor: pointer;
+        }
+
     }
 
 
