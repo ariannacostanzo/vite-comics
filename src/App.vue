@@ -14,12 +14,14 @@
   <AppHeader/>
   <AppMain/>
   <AppBonus/>
+  <!-- working on footer with branch -->
   <AppFooter/>
 </template>
 
 <style>
   body {
     background-color: #0e0e0e;
+    font-family: 'Open Sans', sans-serif;
   }
 
   /* da mettere nel file scss */

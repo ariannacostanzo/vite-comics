@@ -104,7 +104,7 @@ ul{
         text-transform: uppercase;
         font-size: .8rem;
         font-weight: 700;
-        font-family: 'Open Sans', sans-serif;
+        
     }
 
 }
