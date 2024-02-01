@@ -16,6 +16,25 @@
   <AppFooter/>
 </template>
 
-<style scoped>
-  /* style here */
+<style>
+  body {
+    background-color: #0e0e0e;
+  }
+
+  /* da mettere nel file scss */
+  /* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  } */
+
+  ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 </style>
