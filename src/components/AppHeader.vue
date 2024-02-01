@@ -1,6 +1,61 @@
 <script>
   export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    data() {
+        return {
+            nav: [
+            {
+                text: 'Characters',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Comics',
+                url: '#',
+                current: true,
+            },
+            {
+                text: 'Movies',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'TV',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Games',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Collectibles',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Videos',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Fans',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'News',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Shop',
+                url: '#',
+                current: false,
+            }],
+        }
+    }
   }
 </script>
 
@@ -12,16 +67,7 @@
             </figure>
             <nav>
                 <ul>
-                    <li><a href="#">Characters</a></li>
-                    <li><a href="#">Comics</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Collectibles</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Fans</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li v-for="link in nav"><a :href="link.url" :class="{'active': link.current}">{{ link.text }}</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,6 +75,7 @@
 </template>
 
 <style lang="scss" scoped>
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -55,10 +102,14 @@ ul{
 
     a {
         text-transform: uppercase;
-        font-size: .9rem;
-        font-weight: 500;
+        font-size: .8rem;
+        font-weight: 700;
         font-family: 'Open Sans', sans-serif;
     }
 
+}
+
+.active {
+    color: #0282f9;
 }
 </style>
