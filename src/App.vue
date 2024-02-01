@@ -14,7 +14,6 @@
   <AppHeader/>
   <AppMain/>
   <AppBonus/>
-  <!-- working on footer with branch -->
   <AppFooter/>
 </template>
 
