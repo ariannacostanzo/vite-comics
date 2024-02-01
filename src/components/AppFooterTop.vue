@@ -31,10 +31,56 @@ export default {
     <div id="footer-top">
         <div class="footer-top container">
             <nav class="row">
-                <ul v-for="(ul, i) in footerNavbar" :key="i">
+                <!-- si potrebbe usare ma non riesco a mettere shop sotto dc comics -->
+                <!-- <ul v-for="(ul, i) in footerNavbar" :key="i">
                     <h4>{{ ul.heading }}</h4>
                     <li v-for="(li, i) in ul.listItems" :key="i"><a href="#">{{ li }}</a></li>
-                </ul>
+                </ul> -->
+
+                <div class="col">
+                    <ul>
+                        <h4>dc comics</h4>
+                        <li><a href="#">Characters</a></li>
+                        <li><a href="#">Comics</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                    <ul>
+                        <h4>shop</h4>
+                        <li><a href="#">Shop DC</a></li>
+                        <li><a href="#">Shop DC Collectibles</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <h4>dc</h4>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy policy (New)</a></li>
+                        <li><a href="#">Ad Choices</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Subscriptions</a></li>
+                        <li><a href="#">Talent Workshops</a></li>
+                        <li><a href="#">CPSC Certificates</a></li>
+                        <li><a href="#">Ratings</a></li>
+                        <li><a href="#">Shop Help</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <h4>sites</h4>
+                        <li><a href="#">DC</a></li>
+                        <li><a href="#">MAD Magazine</a></li>
+                        <li><a href="#">DC Kids</a></li>
+                        <li><a href="#">DC Universe</a></li>
+                        <li><a href="#">DC Power Visa</a></li>
+                    </ul>
+                </div>
+
             </nav>
             <img src="../assets/images/dc-logo-bg.png" alt="">
         </div>
@@ -72,7 +118,7 @@ img {
     h4 {
         font-size: 1.1rem;
         text-transform: uppercase;
-        margin-bottom: .8rem;
+        margin: .8rem 0;
     }
 
     li {

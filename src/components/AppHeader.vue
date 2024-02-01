@@ -67,7 +67,7 @@
             </figure>
             <nav>
                 <ul>
-                    <li v-for="link in nav"><a :href="link.url" :class="{'active': link.current}">{{ link.text }}</a></li>
+                    <li v-for="(link, i) in nav" :key="i"><a :href="link.url" :class="{'active': link.current}">{{ link.text }}</a></li>
                 </ul>
             </nav>
         </div>
