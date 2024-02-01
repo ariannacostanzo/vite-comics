@@ -1,12 +1,18 @@
 <script>
-  // import something from 'something';
+  import AppHeader from './components/AppHeader.vue';
+  import AppMain from './components/AppMain.vue';
+  import AppFooter from './components/AppFooter.vue';
+
   export default {
-    name: ''
+    name: 'App',
+    components: {AppHeader, AppMain, AppFooter}
   }
 </script>
 
 <template>
-  <!-- template here -->
+  <AppHeader/>
+  <AppMain/>
+  <AppFooter/>
 </template>
 
 <style scoped>
