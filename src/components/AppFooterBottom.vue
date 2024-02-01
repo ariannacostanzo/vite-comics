@@ -88,7 +88,11 @@ export default {
 
         nav {
             display: flex;
-            gap: 15px;
+            gap: 20px;
+        }
+
+        h4 {
+            font-size: 1.3rem;
         }
 
     }

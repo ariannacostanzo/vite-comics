@@ -48,7 +48,6 @@
     } 
 
     #footer-top {
-        /* padding: 2rem 0; */
         background-image: url(../assets/images/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -80,7 +79,7 @@
         }
 
         a {
-            font-size: .9rem;
+            font-size: .8rem;
             color: #959595;
         }
     }
