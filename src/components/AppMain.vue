@@ -1,9 +1,12 @@
 <script>
+  import { comicsCards } from "../assets/data";
+import ComicsCard from "./AppElements/ComicsCard.vue";
   export default {
     name: 'AppMain',
     props: {
       comicsCards: Array
     },
+    components: { ComicsCard }
   }
 </script>
 
@@ -11,19 +14,13 @@
   <main>
     
       <div class="container">
+        
           <span class="label">
             current series
           </span>
 
         <div class="row">
-
-          <div class="card" v-for="card in comicsCards">
-            <figure>
-              <img :src="card.thumb" :alt="card.series">
-            </figure>
-            <p>{{ card.series }}</p>
-          </div>
-          
+          <comicsCard :comicsCards="comicsCards"/>
         </div>
 
         <div class="btn-div">
@@ -60,35 +57,6 @@ main {
 .row {
   @include flexbox(flex-start, flex-start);
   flex-wrap: wrap;
-
-
-  .card {
-    flex-basis: calc(100% / 6);
-    padding: 1rem 1rem;
-
-    figure {
-      height: 170px;
-      width: 168px;
-
-    }
-
-    img {
-      
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      
-    }
-
-    p {
-      font-size: .9rem;
-      text-transform: uppercase;
-      padding: 1rem 0;
-    }
-
-  }
-
 }
 
 .btn-div {
@@ -105,7 +73,4 @@ main {
   }
 }
 
-
-
-  
 </style>

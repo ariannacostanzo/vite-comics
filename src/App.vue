@@ -27,6 +27,7 @@
   <AppMain :comicsCards="comicsCards"/>
   <AppBonus :buyMerchList="buyMerchList"/>
   <AppFooter :footerTopList="footerTopList" :footerBottomSocial="footerBottomSocial"/>
+  
 </template>
 
 <style>
