@@ -1,32 +1,8 @@
 <script>
   export default {
     name: 'AppBonus',
-    data() {
-      return {
-        lists: [
-          {
-            name: 'Digital comics',
-            image: 'buy-comics-digital-comics.png'
-          },
-          {
-            name: 'DC Merchandise',
-            image: 'buy-comics-merchandise.png'
-          },
-          {
-            name: 'Subscription',
-            image: 'buy-comics-subscriptions.png'
-          },
-          {
-            name: 'Comic shop locator',
-            image: 'buy-comics-shop-locator.png'
-          },
-          {
-            name: 'dc power visa',
-            image: 'buy-dc-power-visa.svg'
-          },
-
-        ]
-      }
+    props: {
+      buyMerchList: Array
     },
     methods: {
       createImagePath(item) {
@@ -40,14 +16,13 @@
 <template>
     <section>
         <ul class="container">
-         <li v-for="list in lists"><img :src="createImagePath(list.image)" :alt="list.image"><a href="">{{ list.name }}</a></li>
+         <li v-for="list in buyMerchList"><img :src="createImagePath(list.image)" :alt="list.image"><a href="">{{ list.name }}</a></li>
         </ul>
     </section>
 </template>
 
 <style lang="scss" scoped>
 @import '../assets/scss/style.scss';
-// @use '../assets/scss/style.scss'as *
 
 section {
     color: white;
