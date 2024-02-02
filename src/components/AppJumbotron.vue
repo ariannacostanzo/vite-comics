@@ -6,8 +6,7 @@
 
 <template>
     <figure>
-        <img src="../assets/images/jumbotron.jpg" alt="">
-
+        <img src="../assets/images/jumbotron.jpg" alt="Jumbotron">
     </figure>
 </template>
 
