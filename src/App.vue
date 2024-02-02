@@ -168,6 +168,52 @@
                 name: 'dc power visa',
                 image: 'buy-dc-power-visa.svg'
               }],
+              footerTopList: [
+                {   list: [{
+                        heading: 'Dc comics',
+                        listItems: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+                    },
+                    {
+                        heading: 'Shop',
+                        listItems: ['Shop DC', 'Shop DC Collectibles']
+                    }]
+                },
+                {
+                    list: [{
+                        heading: 'DC',
+                        listItems: ['Terms Of Use', 'Privacy policy (New)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscription', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
+                    }]
+                },
+                {
+                    list: [{
+                        heading: 'Sites',
+                        listItems: ['Dc', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
+                    }]
+                },
+
+            ],
+            footerBottomSocial: [
+                {
+                    name: 'facebook',
+                    url: 'footer-facebook'
+                },
+                {
+                    name: 'twitter',
+                    url: 'footer-twitter'
+                },
+                {
+                    name: 'youtube',
+                    url: 'footer-youtube'
+                },
+                {
+                    name: 'pinterest',
+                    url: 'footer-pinterest'
+                },
+                {
+                    name: 'periscope',
+                    url: 'footer-periscope'
+                },
+            ]
 
           
       }
@@ -180,7 +226,7 @@
   <AppJumbotron/>
   <AppMain :comicsCards="comicsCards"/>
   <AppBonus :buyMerchList="buyMerchList"/>
-  <AppFooter/>
+  <AppFooter :footerTopList="footerTopList" :footerBottomSocial="footerBottomSocial"/>
 </template>
 
 <style>

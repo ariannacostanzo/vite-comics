@@ -1,31 +1,8 @@
 <script>
 export default {
     name: 'AppFooterBottom',
-    data() {
-        return {
-            socialIcons: [
-                {
-                    name: 'facebook',
-                    url: 'footer-facebook'
-                },
-                {
-                    name: 'twitter',
-                    url: 'footer-twitter'
-                },
-                {
-                    name: 'youtube',
-                    url: 'footer-youtube'
-                },
-                {
-                    name: 'pinterest',
-                    url: 'footer-pinterest'
-                },
-                {
-                    name: 'periscope',
-                    url: 'footer-periscope'
-                },
-            ]
-        }
+    props: {
+        footerBottomSocial: Array
     },
     methods: {
       createImagePath(item) {
@@ -40,10 +17,10 @@ export default {
     <div id="footer-bottom">
         <div class="footer-bottom container">
             <button>Sign-up now!</button>
-            <div>
+            <div class="footer-social-container">
                 <h4>FOLLOW US</h4>
                 <nav>
-                    <img v-for="(icon, i) in socialIcons" :key="i" :src="createImagePath(icon.url)" :alt="icon.name">
+                    <img v-for="(icon, i) in footerBottomSocial" :key="i" :src="createImagePath(icon.url)" :alt="icon.name">
                 </nav>
             </div>
         </div>
@@ -77,7 +54,7 @@ export default {
         }
     }
 
-    div {
+    .footer-social-container {
         display: flex;
         align-items: center;
         gap: 30px;
@@ -97,7 +74,6 @@ export default {
         }
 
     }
-
 
 }
 </style>

@@ -3,14 +3,18 @@ import AppFooterTop from './AppFooterTop.vue';
 import AppFooterBottom from './AppFooterBottom.vue';
   export default {
     name: 'AppFooter',
-    components: {AppFooterTop, AppFooterBottom}
+    components: {AppFooterTop, AppFooterBottom},
+    props: {
+      footerTopList: Array,
+      footerBottomSocial: Array
+    }
   }
 </script>
 
 <template>
     <footer>
-        <AppFooterTop/>
-        <AppFooterBottom/>
+        <AppFooterTop :footerTopList="footerTopList"/>
+        <AppFooterBottom :footerBottomSocial="footerBottomSocial"/>
     </footer>
 </template>
 

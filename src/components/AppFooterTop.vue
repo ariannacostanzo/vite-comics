@@ -1,34 +1,9 @@
 <script>
 export default {
     name: 'AppFooterTop',
-    data() {
-        return {
-            listElements: [
-                {   list: [{
-                        heading: 'Dc comics',
-                        listItems: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
-                    },
-                    {
-                        heading: 'Shop',
-                        listItems: ['Shop DC', 'Shop DC Collectibles']
-                    }]
-                },
-                {
-                    list: [{
-                        heading: 'DC',
-                        listItems: ['Terms Of Use', 'Privacy policy (New)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscription', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
-                    }]
-                },
-                {
-                    list: [{
-                        heading: 'Sites',
-                        listItems: ['Dc', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
-                    }]
-                },
-
-            ]
-        }
-    },
+    props: {
+        footerTopList: Array
+    }
     
 }
 </script>
@@ -38,7 +13,7 @@ export default {
         <div class="footer-top container">
             <nav class="row">
 
-                <div class="col" v-for="(element, i) in listElements" :key="i">
+                <div class="col" v-for="(element, i) in footerTopList" :key="i">
                     <ul v-for="(list, i) in element.list" :key="i">
                         <h4>{{ list.heading }}</h4>
                         <li v-for="(item, i) in list.listItems" :key="i"><a href="#">{{ item }}</a></li>
