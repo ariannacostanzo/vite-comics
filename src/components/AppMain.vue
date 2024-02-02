@@ -58,8 +58,7 @@
   }
 
   .row {
-    display: flex;
-    align-items: baseline;
+    @include flexbox(baseline, flex-start);
     flex-wrap: wrap;
 
 
@@ -87,9 +86,7 @@
   }
 
   .btn-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(center, center);
 
     button {
       text-align: center;

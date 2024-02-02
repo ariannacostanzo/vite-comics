@@ -35,9 +35,7 @@ export default {
 }
 
 .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox(center, space-between);
     padding: 2.5rem 0;
 
     button {
@@ -55,8 +53,7 @@ export default {
     }
 
     .footer-social-container {
-        display: flex;
-        align-items: center;
+        @include flexbox(center, flex-start);
         gap: 30px;
         color: $blue;
 

@@ -32,9 +32,7 @@ header {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox(center, space-between);
 }
 
 img {

@@ -39,9 +39,7 @@ export default {
 }
 
 .footer-top {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @include flexbox(baseline, space-between);
 }
 
 img {
@@ -50,8 +48,7 @@ img {
 }
 
 .row {
-    display: flex;
-    align-items: baseline;
+    @include flexbox(baseline, flex-start);
     gap: 30px;
 
     h4 {
