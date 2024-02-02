@@ -128,6 +128,7 @@
     color: white;
     font-size: 1.5rem;
     padding: 1.5rem 0;
+    background-color: #1c1c1c;
   }
 
   .label {
