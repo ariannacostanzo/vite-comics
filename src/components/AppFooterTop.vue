@@ -21,7 +21,10 @@ export default {
                 </div>
 
             </nav>
-            <img src="../assets/images/dc-logo-bg.png" alt="">
+            <figure>
+                <img src="../assets/images/dc-logo-bg.png" alt="">
+            </figure>
+
         </div>
     </div>
 </template>
@@ -33,18 +36,23 @@ export default {
     background-image: url(../assets/images/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 430px;
-    overflow: hidden;
     padding: 2rem 0;
+    overflow: hidden;
 }
 
 .footer-top {
-    @include flexbox(baseline, space-between);
+    @include flexbox(center, space-between);
+    
+}
+
+figure {
+    height: 350px;
+    @include flexbox(center, center);
+    
 }
 
 img {
-    width: 50%;
-    align-self: flex-start;
+    width: 500px;
 }
 
 .row {
