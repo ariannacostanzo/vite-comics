@@ -6,63 +6,64 @@
         lists: [
           {
             name: 'Digital comics',
-            image: 'digital-comics'
+            image: 'buy-comics-digital-comics.png'
           },
           {
             name: 'DC Merchandise',
-            image: 'merchandise'
+            image: 'buy-comics-merchandise.png'
           },
           {
             name: 'Subscription',
-            image: 'subscriptions'
+            image: 'buy-comics-subscriptions.png'
           },
           {
             name: 'Comic shop locator',
-            image: 'shop-locator'
+            image: 'buy-comics-shop-locator.png'
           },
+          {
+            name: 'dc power visa',
+            image: 'buy-dc-power-visa.svg'
+          },
+
         ]
       }
     },
-    mounted() {
-      this.lists.forEach ((item) => {
-
-        console.log(`@assets/images/buy-comics-${item.image}.png`)
-      })
-    }
+    methods: {
+      createImagePath(item) {
+        const path = new URL(`../assets/images/${item}`, import.meta.url);
+        return path.href
+      }
+    },
   }
 </script>
 
 <template>
     <section>
         <ul class="container">
-          <li><img src="../assets/images/buy-comics-digital-comics.png" alt=""><a href="">digital comics</a></li>
-          <li><img src="../assets/images/buy-comics-merchandise.png" alt=""><a href="">dc merchandise</a></li>
-          <li><img src="../assets/images/buy-comics-subscriptions.png" alt=""><a href="">subscriptions</a></li>
-          <li><img src="../assets/images/buy-comics-shop-locator.png" alt=""><a href="">comic shop locator</a></li>
-        
-         <!-- <li v-for="list in lists"><img :src="`@assets/images/buy-comics-${list.image}.png`" :alt="list.image"><a href="">{{ list.name }}</a></li> -->
-        
+         <li v-for="list in lists"><img :src="createImagePath(list.image)" :alt="list.image"><a href="">{{ list.name }}</a></li>
         </ul>
     </section>
 </template>
 
 <style lang="scss" scoped>
 @import '../assets/scss/style.scss';
+// @use '../assets/scss/style.scss'as *
 
 section {
     color: white;
     background-color: $blue;
-    font-size: 1.2rem;
+    font-size: .8rem;
     padding: 3rem 0;
 
     img {
-      width: 50px;
+      height: 50px;
     }
 
     ul {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      gap: 30px;
     }
 
     li {

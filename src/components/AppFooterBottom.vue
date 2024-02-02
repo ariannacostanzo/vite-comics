@@ -27,12 +27,12 @@ export default {
             ]
         }
     },
-    mounted() {
-        this.socialIcons.forEach((icon)=> {
-            console.log(`@/assets/images/${icon.url}.png`)
-            
-        })
-    }
+    methods: {
+      createImagePath(item) {
+        const path = new URL(`../assets/images/${item}.png`, import.meta.url);
+        return path.href
+      }
+    },
 }
 </script>
 
@@ -43,13 +43,7 @@ export default {
             <div>
                 <h4>FOLLOW US</h4>
                 <nav>
-                    <!-- non mi funziona il path image -->
-                    <!-- <img v-for="(icon, i) in socialIcons" :key="i" :src="`@/assets/images/${icon.url}.png`" :alt="icon.name"> -->
-                    <img src="../assets/images/footer-facebook.png" alt="facebook">
-                    <img src="../assets/images/footer-twitter.png" alt="twitter">
-                    <img src="../assets/images/footer-youtube.png" alt="youtube">
-                    <img src="../assets/images/footer-pinterest.png" alt="pinterest">
-                    <img src="../assets/images/footer-periscope.png" alt="periscope">
+                    <img v-for="(icon, i) in socialIcons" :key="i" :src="createImagePath(icon.url)" :alt="icon.name">
                 </nav>
             </div>
         </div>

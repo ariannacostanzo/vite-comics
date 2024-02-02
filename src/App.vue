@@ -19,4 +19,4 @@
 
 <style>
 @import './assets/scss/style.scss';
-</style>
+</style>\
