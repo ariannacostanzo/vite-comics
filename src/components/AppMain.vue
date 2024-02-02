@@ -95,15 +95,29 @@
 
 <template>
     <main>
-        <div class="container row">
-          <div class="card" v-for="card in cards">
-            <figure>
-              <img :src="card.thumb" :alt="card.series">
-            </figure>
-            <p>{{ card.series }}</p>
+      
+        <div class="container">
+            <span class="label">
+              current series
+            </span>
+
+          <div class="row">
+
+            <div class="card" v-for="card in cards">
+              <figure>
+                <img :src="card.thumb" :alt="card.series">
+              </figure>
+              <p>{{ card.series }}</p>
+            </div>
+            
           </div>
-          
+
+          <div class="btn-div">
+            <button>LOAD MORE</button>
+          </div>
+
         </div>
+
     </main>
 </template>
 
@@ -113,7 +127,19 @@
   main {
     color: white;
     font-size: 1.5rem;
-    padding: 4rem 0;
+    padding: 1.5rem 0;
+  }
+
+  .label {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: $blue;
+    padding: 10px 25px;
+    position: relative;
+    top: -40px;
+    left: 0;
+    
   }
 
   .row {
@@ -144,6 +170,24 @@
     }
 
   }
+
+  .btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      text-align: center;
+      padding: 12px 40px;
+      background-color: $blue;
+      border: 0;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  
 
   
 </style>
