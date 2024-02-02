@@ -1,6 +1,6 @@
 <script>
   import { comicsCards } from "../assets/data";
-import ComicsCard from "./AppElements/ComicsCard.vue";
+  import ComicsCard from "./AppElements/ComicsCard.vue";
   export default {
     name: 'AppMain',
     props: {
